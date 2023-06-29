@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.ViewStudentExamResultsController">
+   <children>
+      <TableView fx:id="studentResTV" layoutY="29.0" prefHeight="390.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="239.0" resizable="false" text="Exam" />
+            <TableColumn fx:id="mark" prefWidth="160.0" resizable="false" text="Mark" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="12.0" layoutY="8.0" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #3333cc;" text="Exam Results" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="34.0" layoutY="68.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="70.0" rotate="180.0" style="-fx-background-color: #3333cc;" text="➞" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ListView fx:id="listview" layoutY="87.0" prefHeight="390.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.ViewExamResultsController">
+   <children>
+      <Label alignment="CENTER" layoutX="14.0" layoutY="32.0" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #3333cc;" text="Exam Results" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="27.0" layoutY="5.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="70.0" rotate="180.0" style="-fx-background-color: #3333cc;" text="➞" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="comb" layoutX="436.0" layoutY="15.0" onAction="#setTable" prefWidth="150.0" style="-fx-background-color: white;" />
+      <TableView fx:id="examResTV" layoutX="30.0" layoutY="125.0" prefHeight="390.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="name" prefWidth="220.0" resizable="false" text="Student Name" />
+            <TableColumn fx:id="uniId" prefWidth="211.0" resizable="false" text="Student Uni Id" />
+            <TableColumn fx:id="mark" prefWidth="168.0" resizable="false" text="Mark" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

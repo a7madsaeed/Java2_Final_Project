@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="783.0" maxWidth="1116.0" prefHeight="783.0" prefWidth="1116.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.AddStudentController">
+    <children>
+        <CubicCurve controlX1="33.29595947265625" controlX2="118.14894104003906" controlY1="-763.1896362304688" controlY2="-546.3513793945312" endX="499.00042724609375" endY="-224.53045654296875" fill="#3333cc" layoutX="615.2716827392578" layoutY="632.0" startX="499.0" startY="-632.0" stroke="TRANSPARENT" AnchorPane.rightAnchor="0.52325439453125" />
+        <ImageView fitHeight="71.0" fitWidth="159.0" layoutX="943.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="943.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="13.0">
+            <image>
+                <Image url="@images/LOGO-WWB.png" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="1.0" />
+            </effect>
+        </ImageView>
+        <TextField fx:id="studentPasswordTF" alignment="CENTER" layoutX="542.0" layoutY="338.0" prefHeight="30.0" prefWidth="200.0" promptText="Enter Password" style="-fx-background-color: transparent; -fx-border-color: gray; -fx-border-radius: 10;" />
+        <TextField fx:id="studentNameTF" alignment="CENTER" layoutX="542.0" layoutY="378.0" prefHeight="30.0" prefWidth="200.0" promptText="Enter Name" style="-fx-background-color: transparent; -fx-border-color: gray; -fx-border-radius: 10;" />
+        <Label contentDisplay="CENTER" layoutX="398.0" layoutY="299.0" prefHeight="31.0" prefWidth="131.0" text="Username: ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label contentDisplay="CENTER" layoutX="398.0" layoutY="339.0" prefHeight="31.0" prefWidth="131.0" text="Password:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label contentDisplay="CENTER" layoutX="398.0" layoutY="379.0" prefHeight="31.0" prefWidth="131.0" text="Name:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label contentDisplay="CENTER" layoutX="398.0" layoutY="419.0" prefHeight="31.0" prefWidth="131.0" text="Birthday: ">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label contentDisplay="CENTER" layoutX="398.0" layoutY="459.0" prefHeight="31.0" prefWidth="131.0" text="Gender:">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <DatePicker fx:id="studentBirthdayTF" layoutX="542.0" layoutY="419.0" prefHeight="30.0" prefWidth="200.0" style="-fx-background-color: transparent; -fx-border-color: gray; -fx-border-radius: 10;" />
+        <Button fx:id="addStudent" layoutX="556.0" layoutY="541.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="37.0" prefWidth="159.0" style="-fx-background-color: #3333cc;" text="ADD" textFill="WHITE" />
+        <RadioButton fx:id="male" layoutX="542.0" layoutY="464.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="female" layoutX="636.0" layoutY="464.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+        <ImageView fx:id="nameErr" fitHeight="21.0" fitWidth="28.0" layoutX="749.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@images/high_importance_96px.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="usernameErr" fitHeight="21.0" fitWidth="28.0" layoutX="749.0" layoutY="304.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@images/high_importance_96px.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="passwordErr" fitHeight="21.0" fitWidth="28.0" layoutX="749.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@images/high_importance_96px.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="genderErr" fitHeight="21.0" fitWidth="28.0" layoutX="749.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@images/high_importance_96px.png" />
+            </image>
+        </ImageView>
+        <TextField fx:id="studentUsernameTF" alignment="CENTER" layoutX="542.0" layoutY="298.0" prefHeight="30.0" prefWidth="200.0" promptText="Enter Username" style="-fx-background-color: transparent; -fx-border-color: gray; -fx-border-radius: 10;" />
+        <ImageView fx:id="birthdayErr" fitHeight="37.0" fitWidth="21.0" layoutX="749.0" layoutY="425.0" pickOnBounds="true" preserveRatio="true" visible="false">
+            <image>
+                <Image url="@images/high_importance_96px.png" />
+            </image>
+        </ImageView>
+      <Button fx:id="cancelAddStudent" layoutX="383.0" layoutY="541.0" mnemonicParsing="false" onAction="#cancelAddStudent" prefHeight="37.0" prefWidth="159.0" style="-fx-background-color: #ccc;" text="Cancel" textFill="#838383" />
+      <CubicCurve controlX1="556.9297485351562" controlX2="-195.0702667236328" controlY1="521.0" controlY2="127.09796142578125" endX="-227.0" endY="-262.0" fill="#3333cc" layoutX="227.0" layoutY="262.0" startX="-227.0" startY="521.0" stroke="TRANSPARENT" />
+      <Label layoutX="383.0" layoutY="204.0" text="Add Student">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Separator layoutX="383.0" layoutY="253.0" prefHeight="8.0" prefWidth="350.0" />
+    </children>
+</AnchorPane>

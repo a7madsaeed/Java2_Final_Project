@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="448.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.ViewTeacherController">
+   <children>
+      <TableView fx:id="viewTeachersTV" layoutY="37.0" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: none;" AnchorPane.bottomAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="teacherUsername" prefWidth="96.0" resizable="false" style="-fx-color: white;" text="username" />
+            <TableColumn fx:id="teacherName" prefWidth="136.0" resizable="false" style="-fx-color: white;" text="name" />
+            <TableColumn fx:id="teacherField" prefWidth="140.0" resizable="false" style="-fx-color: white;" text="field" />
+            <TableColumn fx:id="teacherGender" prefWidth="109.0" resizable="false" style="-fx-color: white;" text="gender" />
+            <TableColumn fx:id="teacherBirthday" prefWidth="117.0" resizable="false" style="-fx-color: white;" text="birthday" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="53.0" prefWidth="600.0" style="-fx-background-color: #3333cc;" text="Teachers" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#Back" style="-fx-background-color: #3333cc;" text="Back" textFill="WHITE" />
+   </children>
+</AnchorPane>

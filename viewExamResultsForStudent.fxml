@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.ViewExamResultsForStudentController">
+   <children>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="42.0" prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #3333cc;" text="Exam Results" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="37.0" layoutY="15.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="70.0" rotate="180.0" style="-fx-background-color: #3333cc;" text="➞" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TableView fx:id="examResTV" layoutX="40.0" layoutY="135.0" onMouseClicked="#viewDetails" prefHeight="390.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <columns>
+            <TableColumn fx:id="exam" prefWidth="347.0" resizable="false" text="Exam" />
+            <TableColumn fx:id="mark" prefWidth="135.0" resizable="false" text="Mark" />
+            <TableColumn fx:id="outof" prefWidth="120.0" resizable="false" text="out of" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

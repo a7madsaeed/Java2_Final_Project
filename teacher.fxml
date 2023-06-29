@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="783.0" prefWidth="1116.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.TeacherController">
+   <children>
+      <CubicCurve controlX1="33.29595947265625" controlX2="118.14894104003906" controlY1="-763.1896362304688" controlY2="-546.3513793945312" endX="499.00042724609375" endY="-224.53045654296875" fill="#3333cc" layoutX="625.0" layoutY="631.0" startX="499.0" startY="-632.0" stroke="TRANSPARENT" AnchorPane.topAnchor="-40.90203857421875" />
+      <ImageView fitHeight="71.0" fitWidth="159.0" layoutX="952.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/LOGO-WWB.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="445.0" layoutY="334.0" prefHeight="58.0" prefWidth="462.0" text="Welcome To The UCAS ">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="445.0" layoutY="392.0" prefHeight="58.0" prefWidth="462.0" text="Teacher DashBoard">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="783.0" prefWidth="330.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1180.0" prefWidth="315.0" style="-fx-background-color: #3333cc;">
+               <children>
+                  <ImageView fitHeight="123.0" fitWidth="144.0" layoutX="97.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/icons8-customer-64.png" />
+                     </image>
+                  </ImageView>
+                  <Circle fill="#1f93ff00" layoutX="159.0" layoutY="129.0" radius="72.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+                  <Button fx:id="Dashboard" layoutX="13.0" layoutY="298.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: white; -fx-border-radius: 0;" text="Dashboard">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="welcomeLbl" alignment="CENTER" layoutY="201.0" prefHeight="71.0" prefWidth="315.0" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="SeclogoutBtn" layoutY="8.0" mnemonicParsing="false" onAction="#Seclogout" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: #3333cc;" text="Logout" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Arial Black" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewStudentBtn" layoutX="12.0" layoutY="414.0" mnemonicParsing="false" onAction="#viewStudent" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="View Students" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addStudentBtn" layoutX="12.0" layoutY="472.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Add Student" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="12.0" layoutY="382.0" prefHeight="37.0" prefWidth="290.0" text="Students" textFill="#cccccc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="530.0" prefHeight="37.0" prefWidth="290.0" text="Questions" textFill="#cccccc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="viewQuestionBtn" layoutX="13.0" layoutY="567.0" mnemonicParsing="false" onAction="#viewQuestion" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="View Questions" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" layoutX="13.0" layoutY="625.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Add Questions" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="14.0" layoutY="842.0" prefHeight="37.0" prefWidth="290.0" text="Exams" textFill="#cccccc">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="viewExamBtn" layoutX="15.0" layoutY="879.0" mnemonicParsing="false" onAction="#viewExam" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="View Exams" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addExamBtn" layoutX="15.0" layoutY="937.0" mnemonicParsing="false" onAction="#addExam" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Add Exams" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="addQYesOrNoBtn" alignment="CENTER" layoutX="14.0" layoutY="678.0" mnemonicParsing="false" onAction="#addQYesOrNo" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Yes or No" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="viewExamResultBtn" layoutX="15.0" layoutY="995.0" mnemonicParsing="false" onAction="#viewExamResult" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="View Exams Results" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="79.0" layoutY="684.0" text="↳" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addQMultipleBtn" alignment="CENTER" layoutX="14.0" layoutY="731.0" mnemonicParsing="false" onAction="#addQMultiple" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Multiple " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="79.0" layoutY="737.0" text="↳" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="addQFillBlankBtn" alignment="CENTER" layoutX="14.0" layoutY="784.0" mnemonicParsing="false" onAction="#addQFillBlank" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Fill Blank " textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="16.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="79.0" layoutY="790.0" text="↳" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="viewSEResultBtn" layoutX="15.0" layoutY="1053.0" mnemonicParsing="false" onAction="#viewStudentExamResult" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Student Exams Res." textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

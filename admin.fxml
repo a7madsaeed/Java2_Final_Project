@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="783.0" prefWidth="1116.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.AdminController">
+    <children>
+      <CubicCurve controlX1="33.29595947265625" controlX2="118.14894104003906" controlY1="-763.1896362304688" controlY2="-546.3513793945312" endX="499.00042724609375" endY="-224.53045654296875" fill="#3333cc" layoutX="615.9033660888672" layoutY="633.0" startX="499.0" startY="-632.0" stroke="TRANSPARENT" AnchorPane.rightAnchor="-0.02020263671875" />
+        <ImageView fitHeight="71.0" fitWidth="159.0" layoutX="943.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="943.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">
+            <image>
+                <Image url="@images/LOGO-WWB.png" />
+            </image>
+         <effect>
+            <ColorAdjust brightness="1.0" />
+         </effect>
+        </ImageView>
+      <Pane layoutY="3.0" prefHeight="783.0" prefWidth="315.0" style="-fx-background-color: #3333cc;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="801.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="123.0" fitWidth="144.0" layoutX="96.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/icons8-customer-64.png" />
+               </image>
+            </ImageView>
+            <Circle fill="#1f93ff00" layoutX="158.0" layoutY="108.0" radius="72.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0" />
+            <Button fx:id="Dashboard" layoutX="14.0" layoutY="276.0" mnemonicParsing="false" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: white; -fx-border-radius: 0;" text="Dashboard">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewTeacherBtn" layoutX="14.0" layoutY="373.0" mnemonicParsing="false" onAction="#viewTeacher" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="View Teachers" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="addTeacherBtn" layoutX="14.0" layoutY="431.0" mnemonicParsing="false" onAction="#addTeacher" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Add Teacher" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewStudentBtn" layoutX="14.0" layoutY="521.0" mnemonicParsing="false" onAction="#viewStudent" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="View Students" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="addStudentBtn" layoutX="14.0" layoutY="579.0" mnemonicParsing="false" onAction="#addStudent" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Add Student" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="14.0" layoutY="348.0" prefHeight="37.0" prefWidth="290.0" text="Teachers" textFill="#cccccc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="489.0" prefHeight="37.0" prefWidth="290.0" text="Students" textFill="#cccccc">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+              <Button fx:id="SeclogoutBtn" layoutY="2.0" mnemonicParsing="false" onAction="#Seclogout" prefHeight="37.0" prefWidth="99.0" style="-fx-background-color: #3333cc;" text="Logout" textFill="WHITE" underline="true">
+                  <font>
+                      <Font name="Arial Black" size="15.0" />
+                  </font>
+              </Button>
+            <Button fx:id="Statistics" layoutX="14.0" layoutY="670.0" mnemonicParsing="false" onAction="#Statistics" prefHeight="58.0" prefWidth="290.0" style="-fx-border-width: 0; -fx-background-color: #3333cc;" text="Statistics" textFill="WHITE">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="welcomeLbl" alignment="CENTER" layoutX="2.0" layoutY="180.0" prefHeight="71.0" prefWidth="315.0" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold" size="32.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="434.0" layoutY="246.0" prefHeight="58.0" prefWidth="462.0" text="Welcome To The UCAS ">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="304.0" prefHeight="58.0" prefWidth="462.0" text="Admin DashBoard">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Hyperlink alignment="CENTER" layoutX="955.0" layoutY="740.0" prefHeight="24.0" prefWidth="159.0" text="ucas.edu.ps" />
+      <Label layoutX="896.0" layoutY="744.0" text="check more at" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1116.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.AddQFillBlankController">
+    <children>
+        <Label layoutX="358.0" layoutY="178.0" prefHeight="65.0" prefWidth="445.0" text="Add Question (Yes or No)">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Separator layoutX="358.0" layoutY="231.0" prefHeight="25.0" prefWidth="405.0" />
+        <Label layoutX="358.0" layoutY="297.0" prefHeight="25.0" prefWidth="137.0" text="question text" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="questiontext" layoutX="537.0" layoutY="289.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter the question text" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: gray;" AnchorPane.rightAnchor="329.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="358.0" layoutY="361.0" prefHeight="27.0" prefWidth="170.0" text="question image(opt)" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="questionimage" layoutX="537.0" layoutY="353.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter the question image(optional))" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: gray;" AnchorPane.rightAnchor="329.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="358.0" layoutY="490.0" prefHeight="25.0" prefWidth="137.0" text="correct answer" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="358.0" layoutY="426.0" prefHeight="25.0" prefWidth="137.0" text="question mark" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="questionmark" layoutX="537.0" layoutY="418.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter the question mark" style="-fx-border-radius: 10; -fx-border-color: gray; -fx-background-color: transparent;" AnchorPane.rightAnchor="329.0">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Button fx:id="addQuestionBtn" layoutX="590.0" layoutY="565.0" mnemonicParsing="false" onAction="#addQuestion" prefHeight="41.0" prefWidth="137.0" style="-fx-background-color: #3333cc; -fx-border-color: #3333cc; -fx-border-radius: 6;" text="Add" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancelAddQuestionbtn" layoutX="391.0" layoutY="565.0" mnemonicParsing="false" onAction="#cancelAddQuestion" prefHeight="41.0" prefWidth="137.0" style="-fx-background-color: #ccc; -fx-border-color: #ccc; -fx-border-radius: 6;" text="Cancel" textFill="#6f6f6f">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <CubicCurve controlX1="33.29595947265625" controlX2="118.14894104003906" controlY1="-763.1896362304688" controlY2="-546.3513793945312" endX="499.00042724609375" endY="-224.53045654296875" fill="#3333cc" layoutX="614.0" layoutY="634.0" startX="499.0" startY="-632.0" stroke="TRANSPARENT" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-37.90203857421875" />
+        <CubicCurve controlX1="556.9297485351562" controlX2="-195.0702667236328" controlY1="521.0" controlY2="127.09796142578125" endX="-227.0" endY="-262.0" fill="#3333cc" layoutX="228.0" layoutY="273.0" startX="-227.0" startY="521.0" stroke="TRANSPARENT" AnchorPane.leftAnchor="-0.0" AnchorPane.rightAnchor="758.3821716308594" />
+        <ImageView fitHeight="71.0" fitWidth="159.0" layoutX="943.0" layoutY="14.0">
+            <image>
+                <Image url="@images/LOGO-WWB.png" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="1.0" />
+            </effect>
+        </ImageView>
+        <Label fx:id="err" alignment="CENTER" layoutX="358.0" layoutY="96.0" prefHeight="65.0" prefWidth="405.0" textFill="#ff6666">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+      <TextField fx:id="questioncorrectanswer" layoutX="537.0" layoutY="483.0" prefHeight="30.0" prefWidth="250.0" promptText="Enter the question mark" style="-fx-border-radius: 10; -fx-border-color: gray; -fx-background-color: transparent;" AnchorPane.rightAnchor="329.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+    </children>
+</AnchorPane>

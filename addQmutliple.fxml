@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.CubicCurve?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="783.0" prefWidth="1116.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.AddQmutlipleController">
+    <children>
+        <CubicCurve controlX1="423.5811767578125" controlX2="-195.0702667236328" controlY1="579.0197143554688" controlY2="127.09796142578125" endX="-227.0" endY="-262.0" fill="#3333cc" layoutX="228.0" layoutY="263.0" startX="-227.0" startY="521.0" stroke="TRANSPARENT" />
+        <QuadCurve controlX="380.86444091796875" controlY="-206.9127960205078" endX="-235.08935546875" endY="225.8313446044922" fill="#4138dd" layoutX="1270.0" layoutY="30.0" rotate="-131.0" startX="-521.8857421875" startY="-20.942211151123047" stroke="#4138dd" strokeType="INSIDE" />
+        <Label layoutX="298.0" layoutY="94.0" prefHeight="70.0" prefWidth="499.0" text="Add Question (Multiplechoice)">
+            <font>
+                <Font size="36.0" />
+            </font>
+        </Label>
+        <Separator layoutX="298.0" layoutY="147.0" prefHeight="25.0" prefWidth="405.0" />
+        <Label layoutX="298.0" layoutY="213.0" prefHeight="25.0" prefWidth="137.0" text="question text" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="questiontext" alignment="CENTER" layoutX="477.0" layoutY="205.0" promptText="Enter the question text" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: gray;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="298.0" layoutY="277.0" prefHeight="25.0" prefWidth="190.0" text="question image (opt)" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="questionimage" alignment="CENTER" layoutX="477.0" layoutY="269.0" promptText="Enter the question image(optional))" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: gray;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Label layoutX="298.0" layoutY="342.0" prefHeight="25.0" prefWidth="137.0" text="question mark" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="questionmark" alignment="CENTER" layoutX="477.0" layoutY="334.0" promptText="Enter the question mark" style="-fx-border-radius: 10; -fx-border-color: gray; -fx-background-color: transparent;">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TextField>
+        <Button fx:id="addQestionBtn" layoutX="611.0" layoutY="655.0" mnemonicParsing="false" onAction="#addQuestion" prefHeight="41.0" prefWidth="137.0" style="-fx-background-color: #3333cc; -fx-border-color: #3333cc; -fx-border-radius: 6;" text="Add" textFill="WHITE">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancelAddQBtn" layoutX="374.0" layoutY="655.0" mnemonicParsing="false" onAction="#cancelAddQ" prefHeight="41.0" prefWidth="137.0" style="-fx-background-color: #ccc; -fx-border-color: #ccc; -fx-border-radius: 6;" text="Cancel" textFill="#0a0202">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="298.0" layoutY="449.0" prefHeight="27.0" prefWidth="32.0" text="A" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="a" alignment="CENTER" layoutX="330.0" layoutY="442.0" promptText="A" style="-fx-border-radius: 10; -fx-border-color: gray; -fx-background-color: transparent;" AnchorPane.rightAnchor="543.0">
+            <font>
+                <Font name="Tahoma" size="20.0" />
+            </font>
+        </TextField>
+        <RadioButton fx:id="ar" layoutX="583.0" layoutY="450.0" mnemonicParsing="false" selected="true">
+            <font>
+                <Font name="Corbel" size="18.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="ca" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="br" layoutX="925.0" layoutY="451.0" mnemonicParsing="false" toggleGroup="$ca">
+            <font>
+                <Font name="Corbel" size="18.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="cr" layoutX="584.0" layoutY="532.0" mnemonicParsing="false" toggleGroup="$ca">
+            <font>
+                <Font name="Corbel" size="18.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="dr" layoutX="925.0" layoutY="532.0" mnemonicParsing="false" toggleGroup="$ca">
+            <font>
+                <Font name="Corbel" size="18.0" />
+            </font>
+        </RadioButton>
+        <Label alignment="CENTER" layoutX="639.0" layoutY="449.0" prefHeight="27.0" prefWidth="32.0" text="B" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="b" alignment="CENTER" layoutX="670.0" layoutY="442.0" promptText="B" style="-fx-border-radius: 10; -fx-border-color: gray; -fx-background-color: transparent;" AnchorPane.rightAnchor="203.0">
+            <font>
+                <Font name="Tahoma" size="20.0" />
+            </font>
+        </TextField>
+        <Label alignment="CENTER" layoutX="298.0" layoutY="531.0" prefHeight="27.0" prefWidth="32.0" text="C" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="c" alignment="CENTER" layoutX="330.0" layoutY="524.0" promptText="C" style="-fx-border-radius: 10; -fx-border-color: gray; -fx-background-color: transparent;" AnchorPane.rightAnchor="543.0">
+            <font>
+                <Font name="Tahoma" size="20.0" />
+            </font>
+        </TextField>
+        <Label alignment="CENTER" layoutX="638.0" layoutY="531.0" prefHeight="27.0" prefWidth="32.0" text="D" textAlignment="RIGHT">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="d" alignment="CENTER" layoutX="670.0" layoutY="524.0" promptText="D" style="-fx-border-radius: 10; -fx-border-color: gray; -fx-background-color: transparent;" AnchorPane.rightAnchor="203.0">
+            <font>
+                <Font name="Tahoma" size="20.0" />
+            </font>
+        </TextField>
+        <ImageView fitHeight="71.0" fitWidth="159.0" layoutX="943.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/LOGO-WWB.png" />
+            </image>
+            <effect>
+                <ColorAdjust brightness="1.0" />
+            </effect>
+        </ImageView>
+        <Label fx:id="err" alignment="CENTER" layoutX="304.0" layoutY="26.0" prefHeight="58.0" prefWidth="439.0" textFill="#ff7878">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

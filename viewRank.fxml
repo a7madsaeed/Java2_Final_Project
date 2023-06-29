@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="500.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ahmad_120220184.ViewRankController">
+   <children>
+      <Label alignment="CENTER" layoutX="24.0" layoutY="42.0" prefHeight="60.0" prefWidth="500.0" style="-fx-background-color: #3333cc;" text="Ranks" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="BackBtn" layoutX="37.0" layoutY="15.0" mnemonicParsing="false" onAction="#Back" prefHeight="60.0" prefWidth="70.0" rotate="180.0" style="-fx-background-color: #3333cc;" text="➞" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Label fx:id="two" layoutY="110.0" prefHeight="50.0" prefWidth="250.0" text="2. Ahmad" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="one" layoutY="60.0" prefHeight="50.0" prefWidth="250.0" text="1. Ahmad" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="three" layoutY="160.0" prefHeight="50.0" prefWidth="250.0" text="3. Ahmad" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="190.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="four" layoutY="210.0" prefHeight="50.0" prefWidth="250.0" text="4. Ahmad" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="five" layoutY="260.0" prefHeight="50.0" prefWidth="250.0" text="5. Ahmad" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="310.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="avg1" alignment="CENTER" layoutX="300.0" layoutY="70.0" prefHeight="50.0" prefWidth="100.0" text="50.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="avg2" alignment="CENTER" layoutX="300.0" layoutY="130.0" prefHeight="50.0" prefWidth="100.0" text="50.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="avg3" alignment="CENTER" layoutX="300.0" layoutY="190.0" prefHeight="50.0" prefWidth="100.0" text="50.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="avg4" alignment="CENTER" layoutX="300.0" layoutY="250.0" prefHeight="50.0" prefWidth="100.0" text="50.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="avg5" alignment="CENTER" layoutX="300.0" layoutY="310.0" prefHeight="50.0" prefWidth="100.0" text="50.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
